@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/meta.ejs') %>
+  <title>About Us</title>
+</head>
+<body>
+    <%- include('partials/nav.ejs') %>
+  <main>
+    <h1>CAR CARES</h1>
+    <p>
+      Every auto repair facility in the AARS program must meet stringent CAA requirements for quality service at fair prices. Plus, they offer Member-exclusive benefits, such as 3% back in CAA Dollars® on all repairs and a guaranteed 1-year/20,000-km warranty on parts and labour!
+    </p>
+  </main>
+  
+  <%- include('partials/footer.ejs') %>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/tinymce/tinymce.min.js"></script>
+  <script>
+      tinymce.init({
+        selector: '#serviceDescription'
+      });
+  </script>
+</body>
+</html>

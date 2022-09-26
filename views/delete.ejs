@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/meta.ejs') %>
+  <title>Ticket</title>
+</head>
+<body class="thankscard">
+  <%- include('partials/nav_dashboard.ejs') %>
+  <main>
+      <h1>The following Service work is deleted</h1>
+    <section>
+        <div class="thankscardData">
+          
+          <table> 
+            <tr>
+              <th>Name: </th>
+              <td><%= clientName %></td>
+            </tr>
+            <tr>
+              <th>Email: </th>
+              <td><%= clientEmail %></td>
+            </tr>
+            <tr>
+              <th>Description: </th>
+              <td><%- serviceDescription %></td>
+            </tr>
+          </table>
+          <img src="/uploads/<%= imageName %>" alt="Photo">
+          
+        </div>
+    </section>
+  </main>
+  
+  <%- include('partials/footer.ejs') %>
+</body>
+</html>

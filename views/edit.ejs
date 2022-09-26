@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/meta.ejs') %>
+  <title>Edit</title>
+</head>
+<body>
+<%- include('partials/nav_dashboard.ejs') %>
+  <main>
+    <h1>Edit</h1>
+    <form action="/editprocess/<%= _id%>" method="POST" enctype="multipart/form-data">
+      <div class="wrapper">
+        <label for="clientName">Client Name</label>
+        <input type="text" id="clientName" name="clientName" 
+        value="<%= clientName %>">
+      
+      </div>
+      <div class="wrapper">
+        <label for="clientEmail">Client Email</label>
+        <input type="text" id="clientEmail" name="clientEmail" 
+        value="<%= clientEmail %>">
+       
+      </div>
+      <div class="wrapper">
+        <h2>Make changes here!</h2>
+        <!-- <label for="serviceDescription">What can we do for you today!</label> -->
+        <input type="text" id="serviceDescription" name="serviceDescription"
+        value="<%= serviceDescription %>" >
+      </div>
+      <div class="wrapper">
+        <h2 class="carimage">Re-Upload car's Image</h2>
+        <!-- <img style="width: 50px;" src="/uploads/<%= imageName %>" alt="photo"> -->
+        <input type="file" id="image" name="abimage">
+      </div>
+      <div class="submission">
+        <input type="submit" value="Generate Service order">
+      </div>
+    </form>
+
+  </main>
+  
+  <%- include('partials/footer.ejs') %>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="/js/tinymce/tinymce.min.js"></script>
+  <script>
+      tinymce.init({
+        selector: '#serviceDescription'
+      });
+  </script>
+</body>
+</html>

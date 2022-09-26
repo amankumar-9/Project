@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+body{
+    padding: 20px;
+    background-image: url(/images/mceu_29351637811635170099148_1635170099.jpg);
+     /* image- mceu_29351637811635170099148_1635170099.jpg, How Modifications Impact Your Car Insurance?,
+    https://www.insurancedekho.com/car-insurance/news/how-modifications-impact-your-car-insurance.htm  */
+    background-size: cover;
+    font-family: 'Cinzel', serif;
+    width: 1000px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+h1,h2{
+    color: cornsilk;
+    text-shadow: 1px 1px black;
+}
+
+body.ticket{
+    background-image: none;
+}
+body.ticket main{
+    background-size: cover;
+    padding-bottom: 40px;
+    border: 5px solid #8b0b0b;
+}
+body.card footer{
+    color: black;
+}
+
+main{
+    margin: 20px auto;
+    border: 2px solid cornsilk;
+    border-radius: 10px;
+    padding: 20px;
+    width: 1100px;
+    background-color: rgba(0, 0, 0, 0.513);
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+}
+
+body.thankscard footer, body.thankscard header, body.thankscard nav ul li a{
+    color: cornsilk;
+}
+
+header{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+nav{
+text-align: center;
+background-color: rgba(0, 0, 0, 0.513);
+width: 1145px;
+font-size: 25px;
+border: 2px solid cornsilk;
+border-radius: 25px;
+}
+
+header img{
+    float: left;
+    width: 120px;
+    height: 150px;
+}
+
+nav ul{
+    list-style: none;  
+    padding: 0;  
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a:hover{
+    background-color: cornsilk;
+    color: black;
+    border-radius: 25px; 
+}
+
+nav ul a{
+    color: cornsilk;
+    display: inline-block;
+    padding: 0 30px;
+    text-decoration: none;
+}
+
+td img{
+    max-width: 60px;
+}
+
+table{
+    width: 100%;
+    color: cornsilk;
+}
+
+th{
+    text-align: left;
+    padding: 10px;
+}
+
+a{
+    color: cornsilk;
+}
+
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.513);
+    color: cornsilk;
+    width: 1145px;
+}
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/meta1.ejs') %>
+    <title>All Tickets</title>
+ 
+</head>
+<body>
+    <%- include('partials/nav_dashboard.ejs') %>
+    <h1>DASHBOARD</h1>
+  <main>
+ 
+        <table>
+            <tr>
+                <th>Service ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Description</th>
+                <th>Image</th>
+                <th>Delete</th>
+                <th>Edit</th>
+            </tr>
+            <%
+                for(var ticket of tickets){
+                    %>
+                        <tr>
+                            <td><a href="/print/<%= ticket._id %>"><%= ticket._id %></a></td>
+                            <td><%= ticket.clientName %></td>
+                            <td><%= ticket.clientEmail %></td>
+                            <td><%- ticket.serviceDescription %></td>
+                            <td><img src="uploads/<%= ticket.imageName %>" alt=""></td>
+                            <td><a href="/delete/<%= ticket._id %>">DELETE</a></td>
+                            <td><a href="/edit/<%= ticket._id %>">EDIT</a></td>
+                        </tr>
+                    <%
+                }
+            %>
+
+            
+        </table>
+  </main>
+  <%- include('partials/footer.ejs') %>
+
+</body>
+</html>
